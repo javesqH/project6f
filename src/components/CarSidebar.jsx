@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getCartThunk, purchaseCartThunk } from '../store/slices/cart.slice';
 
-const CartSidebar = ({show, handleClose}) => {
+const CarSidebar = ({show, handleClose}) => {
 
     const dispatch = useDispatch()
     const cart = useSelector(state => state.cart)
@@ -38,4 +38,4 @@ const CartSidebar = ({show, handleClose}) => {
     );
 };
 
-export default CartSidebar;
+export default CarSidebar;

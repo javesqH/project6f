@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { getCartThunk } from '../store/slices/cart.slice';
-import CartSidebar from './cartSidebar';
+import CarSidebar from './CarSidebar';
 
 const MyNavbar = () => {
 
@@ -37,7 +37,7 @@ const MyNavbar = () => {
       </Navbar.Collapse>
     </Container>
   </Navbar>
-<CartSidebar show={show} handleClose={handleClose}/>
+<CarSidebar show={show} handleClose={handleClose}/>
  </>
     );
 };
